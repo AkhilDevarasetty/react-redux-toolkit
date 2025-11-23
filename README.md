@@ -49,7 +49,7 @@ This project was created specifically to learn and implement core Redux patterns
 
 ## 📸 Screenshots
 
-*(You can add screenshots of your application here)*
+![Modern Shop App Preview](./src/assets/app-preview.png)
 
 ---
 

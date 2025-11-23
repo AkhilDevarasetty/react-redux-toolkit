@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# Modern React Redux Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive e-commerce application built to master **Redux Toolkit** patterns and state management in React. This project simulates a real-world shopping experience with a good UI design.
 
-Currently, two official plugins are available:
+## 🎯 Learning Goals
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was created specifically to learn and implement core Redux patterns commonly used in e-commerce applications. Key concepts explored include:
 
-## React Compiler
+- **Redux Architecture**: Understanding the flow of data in a global state management system.
+- **Slices**: Creating modular state logic using Redux Toolkit's `createSlice`.
+- **Async Thunks**: Handling asynchronous logic (like API calls) directly within slices using `createAsyncThunk`.
+- **Hooks**: Utilizing `useSelector` to read from state and `useDispatch` to dispatch actions.
+- **Store Configuration**: Setting up the Redux store and combining multiple reducers.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Modern UI/UX**: A clean design using Tailwind CSS.
+- **Product Grid**: Responsive layout with hover effects and product details.
+- **Shopping Cart**: Fully functional cart with add, remove, and quantity adjustment features.
+- **State Persistence**: Cart data persists via local storage (if implemented) or Redux state.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React 19**: Frontend library for building user interfaces.
+- **Redux Toolkit**: Standard way to write Redux logic.
+- **TypeScript**: Static typing for better code quality and developer experience.
+- **Tailwind CSS**: Utility-first CSS framework for rapid styling.
+- **Vite**: Next-generation frontend tooling.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/AkhilDevarasetty/react-redux-toolkit.git
+    cd react-redux-toolkit
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4.  Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+
+## 📸 Screenshots
+
+*(You can add screenshots of your application here)*
+
+---
+
+Built with ❤️ by [Akhil Devarasetty](https://github.com/AkhilDevarasetty)
